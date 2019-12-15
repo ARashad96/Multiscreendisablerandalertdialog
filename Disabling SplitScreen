@@ -1,0 +1,22 @@
+In the manifest file just add 
+android:resizeableActivity="false" within the application
+
+Example:
+
+<application
+        android:resizeableActivity="false"
+        android:allowBackup="true"
+        android:icon="@drawable/profile"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/profile"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
